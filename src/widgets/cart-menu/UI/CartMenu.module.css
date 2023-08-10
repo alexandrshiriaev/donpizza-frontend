@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+    .cartMenuContainer {
+        min-width: 374px !important;
+    }
+}
