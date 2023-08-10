@@ -22,7 +22,6 @@ export const NavbarComponent = ({
 
     useEffect(() => {
         if (ref) {
-            console.log(ref);
             //@ts-ignore
             // eslint-disable-next-line no-unsafe-optional-chaining
             const children = [...ref.current?.children[1].children];
