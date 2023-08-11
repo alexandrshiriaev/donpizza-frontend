@@ -11,7 +11,7 @@ import * as types from '~/shared/api/models';
 import classes from './ProductModal.module.css';
 import { fetchProductById } from '../api';
 
-import { API_URL } from '~/shared/config';
+import {BASE_URL} from '~/shared/config';
 
 export const ProductModal = () => {
     const { id } = useParams();
@@ -57,7 +57,7 @@ export const ProductModal = () => {
                                 <div className="p-8 grid justify-center">
                                     <img
                                         className="w-full h-auto"
-                                        src={`${API_URL}/${product.imgPath}`}
+                                        src={`${BASE_URL}/${product.imgPath}`}
                                         alt="product-img"
                                         style={{ maxWidth: '512px' }}
                                     />
@@ -113,7 +113,7 @@ export const ProductModal = () => {
                                 <div className="p-8 grid justify-center">
                                     <img
                                         className="w-full h-auto"
-                                        src={`${API_URL}/${product.imgPath}`}
+                                        src={`${BASE_URL}/${product.imgPath}`}
                                         alt="product-img"
                                         style={{ maxWidth: '512px' }}
                                     />

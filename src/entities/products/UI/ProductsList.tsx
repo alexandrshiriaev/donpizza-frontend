@@ -7,7 +7,7 @@ import Product from '~/entities/product';
 
 import { useNavigate } from 'react-router-dom';
 
-import { API_URL } from '~/shared/config';
+import {BASE_URL} from '~/shared/config';
 
 interface ProductsListProps {
     products: types.Product[];
@@ -66,7 +66,7 @@ export const ProductsList = ({ products, listId }: ProductsListProps) => {
                         header={
                             <img
                                 alt="product img"
-                                src={`${API_URL}/${product.imgPath}`}
+                                src={`${BASE_URL}/${product.imgPath}`}
                                 className="h-auto pointer cursor-pointer"
                                 style={{}}
                                 onClick={() => {
