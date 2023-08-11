@@ -74,8 +74,8 @@ export const Cart = () => {
                                                 {item.categoryId === 1 && (
                                                     <>
                                                         {
-                                                            //@ts-ignore
                                                             item
+                                                                //@ts-ignore
                                                                 .removedIngredients
                                                                 .length > 0 && (
                                                                 <p className="text-neutral text-sm mb-1">
@@ -93,8 +93,8 @@ export const Cart = () => {
                                                             )
                                                         }
                                                         {
-                                                            //@ts-ignore
                                                             item
+                                                                //@ts-ignore
                                                                 .addedIngredients
                                                                 .length > 0 && (
                                                                 <p className="text-neutral text-sm">
